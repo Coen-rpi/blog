@@ -18,35 +18,62 @@ body {
 
 .header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
-.header nav a {
-    color: #80a4ed;
-    text-decoration: none;
-    margin: 0 0.5em;
-}
-
-.header nav a:hover {
-    text-decoration: underline;
-}
-
-/* Content */
+/* Main Content */
 .content {
     padding: 1em;
     max-width: 800px;
     margin: auto;
 }
 
-.post {
+/* Most Recent Post */
+.recent-post {
+    background-color: #29293d;
+    padding: 1em;
     margin-bottom: 2em;
+    border-radius: 8px;
 }
 
-.post h2 a {
+.recent-post h2 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5em;
+}
+
+.recent-post a {
     color: #80a4ed;
     text-decoration: none;
 }
 
-.post h2 a:hover {
+.recent-post a:hover {
+    text-decoration: underline;
+}
+
+/* Other Posts */
+.other-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.other-posts .post {
+    background-color: #20202e;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.other-posts .post h3 {
+    font-size: 1.4rem;
+    margin: 0 0 0.5em;
+}
+
+.other-posts .post a {
+    color: #80a4ed;
+    text-decoration: none;
+}
+
+.other-posts .post a:hover {
     text-decoration: underline;
 }
 
